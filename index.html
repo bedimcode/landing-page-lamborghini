@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <title>Landing page lamborghini</title>
+    </head>
+    <body>
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div class="nav__logo">
+                    Lamborghini
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="" class="nav__link">Models</a></li>
+                        <li class="nav__item"><a href="" class="nav__link">Brand</a></li>
+                        <li class="nav__item"><a href="" class="nav__link">Store</a></li>
+                        <li class="nav__item"><a href="" class="nav__link">Experience</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav__toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main-home">
+            <div class="home">
+                <h1 class="home__title">LAMBORGHINI</h1>
+
+                <div class="home__img">
+                    <img src="assets/img/lamborghini.png" alt="">
+                </div>
+
+                <div class="home__information">
+                    <h2 class="home__subtitle">LAMBORGHINI<br>GALLARDO LP560</h2>
+                    <p class="home__description">Lorem ipsum dolor sit amet consect  adipiscing elit, commodo tristique id quisque lobortis facilisi feugiat</p>
+                </div>
+
+                <div class="box">
+                    <div class="box__medium box--dark">
+                        <ion-icon name="speedometer-outline" class="icon-box"></ion-icon>
+                        <h3 class="box__medium-title d-inline">3.7</h3>
+                        <span class="box__medium-description d-block">Sec.</span>
+                        <span class="box__medium-detail">0-100 km/h</span>
+                    </div>
+
+                    <div>
+                        <div class="box__small box--dark">
+                            <ion-icon name="trending-up-outline" class="icon-box icon-box--small"></ion-icon>
+                            <h3 class="box__small-title d-inline">325</h3>
+                            <span class="box__small-description d-block">km/h</span>
+                            <span class="box__small-detail">Top Speed</span>
+                        </div>
+                        <div class="box__small box--dark">
+                            <ion-icon name="car-sport-outline" class="icon-box icon-box--small"></ion-icon>
+                            <h3 class="box__small-title d-inline">8.000</h3>
+                            <span class="box__small-description d-block">r.p.m</span>
+                            <span class="box__small-detail">Power</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- ICONOS -->
+        <script  type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+        
+        <!-- MAIN -->
+        <script src="assets/js/main.js"></script>
+
+        <!-- GSAP -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+        <!-- ANIMATION -->
+        <script>
+            /*TITLE Y IMG*/
+            gsap.from('.home__title', {opacity: -1, duration: 1.5, delay:1})
+            gsap.from('.home__img', {opacity: 0, duration: 1, delay:1, x: 100})
+            gsap.from('.home__information', {opacity: 0, duration: 1, delay:1.2, y: -30})
+
+            /*BOX*/
+            gsap.from('.box__medium', {opacity: 0, duration: 1.5, delay:1.3, y: -50})
+            gsap.from('.box__small', {opacity: -1, duration: 1.5, delay:1.4, y: -50})
+        </script>
+        
+    </body>
+</html>
