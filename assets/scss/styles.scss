@@ -113,17 +113,17 @@ p{
             left: 0;
             background-color: var(--bg-color);
             width: 100%;
-            padding: 2rem;
+            padding: 3rem 0;
             border-radius: 0 0 1rem 1rem;
             box-shadow: 0px 10px 24px hsla(0, 0%, 0%, .5);
             transition: .5s;
         }
     }
     &__list{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
         text-align: center;
-    }
-    &__item{
-        margin-bottom: 1.5rem;
     }
     &__link{
         padding: .5rem;
@@ -256,12 +256,10 @@ p{
     }
     .nav{
         height: calc(var(--header-height) + 1.5rem);
+
         &__list{
-            display: flex;
-        }
-        &__item{
-            margin-right: 2rem;
-            margin-bottom: 0;
+            flex-direction: row;
+            column-gap: 2.5rem;
         }
         &__toggle{
             display: none;
