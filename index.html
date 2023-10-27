@@ -7,11 +7,11 @@
         <title>Landing page lamborghini</title>
     </head>
     <body>
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div class="nav__logo">
+        <header class="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
                     Lamborghini
-                </div>
+                </a>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
@@ -28,8 +28,8 @@
             </nav>
         </header>
 
-        <main class="main-home">
-            <div class="home">
+        <main class="main container">
+            <div class="home grid">
                 <h1 class="home__title">LAMBORGHINI</h1>
 
                 <div class="home__img">
@@ -42,24 +42,24 @@
                 </div>
 
                 <div class="box">
-                    <div class="box__medium box--dark">
+                    <div class="box__content box__medium">
                         <ion-icon name="speedometer-outline" class="icon-box"></ion-icon>
-                        <h3 class="box__medium-title d-inline">3.7</h3>
-                        <span class="box__medium-description d-block">Sec.</span>
+                        <h3 class="box__medium-title inline">3.7</h3>
+                        <span class="box__medium-description block">Sec.</span>
                         <span class="box__medium-detail">0-100 km/h</span>
                     </div>
 
                     <div>
-                        <div class="box__small box--dark">
+                        <div class="box__content box__small">
                             <ion-icon name="trending-up-outline" class="icon-box icon-box--small"></ion-icon>
-                            <h3 class="box__small-title d-inline">325</h3>
-                            <span class="box__small-description d-block">km/h</span>
+                            <h3 class="box__small-title inline">325</h3>
+                            <span class="box__small-description block">km/h</span>
                             <span class="box__small-detail">Top Speed</span>
                         </div>
-                        <div class="box__small box--dark">
+                        <div class="box__content box__small">
                             <ion-icon name="car-sport-outline" class="icon-box icon-box--small"></ion-icon>
-                            <h3 class="box__small-title d-inline">8.000</h3>
-                            <span class="box__small-description d-block">r.p.m</span>
+                            <h3 class="box__small-title inline">8.000</h3>
+                            <span class="box__small-description block">r.p.m</span>
                             <span class="box__small-detail">Power</span>
                         </div>
                     </div>
@@ -69,24 +69,11 @@
 
         <!-- ICONOS -->
         <script  type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
-        
-        <!-- MAIN -->
-        <script src="assets/js/main.js"></script>
 
         <!-- GSAP -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
-
-        <!-- ANIMATION -->
-        <script>
-            /*TITLE Y IMG*/
-            gsap.from('.home__title', {opacity: -1, duration: 1.5, delay:1})
-            gsap.from('.home__img', {opacity: 0, duration: 1, delay:1, x: 100})
-            gsap.from('.home__information', {opacity: 0, duration: 1, delay:1.2, y: -30})
-
-            /*BOX*/
-            gsap.from('.box__medium', {opacity: 0, duration: 1.5, delay:1.3, y: -50})
-            gsap.from('.box__small', {opacity: -1, duration: 1.5, delay:1.4, y: -50})
-        </script>
         
+        <!-- MAIN -->
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
